@@ -47,6 +47,7 @@ var fight = function(enemyName) {
 
       // award player money for winning
       playerMoney = playerMoney + 20;
+      window.alert("You get 20 dollar by defeating one enemy!")
 
       // leave while() loop since enemy is dead
       break;
@@ -103,6 +104,7 @@ var startGame = function(){
       break;
     }
   }
+  // startGame();
 };
 
 
@@ -158,8 +160,6 @@ switch (shopOptionPrompt) {
 }
 };
 
-startGame();
-
 var playAgainConfirm = window.confirm("Would you like to play again?");
 
 if(playAgainConfirm) {
@@ -168,3 +168,4 @@ if(playAgainConfirm) {
 else {
   window.alert("Thank you for playing Robot Gladiators! Come back soon!")
 }
+startGame();
